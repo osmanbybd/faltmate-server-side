@@ -48,6 +48,14 @@ async function run() {
       res.send(result)
     })
 
+    app.patch('/users/theme', async(req , res)=>{
+      const {email , theme} = req.body;
+      const result = await userCollection.updateOne(
+        {email},
+        { $set: {theme}}
+      );
+      res.send(result)
+    })
 
     app.post('/users', async(req, res) =>{
           const userProfile =req.body;
