@@ -154,6 +154,3 @@ app.listen(port, () =>{
 
 
 
-
-// b0O2HxnnI9jkR8Tw
-// roommate_side
